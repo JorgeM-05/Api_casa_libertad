@@ -19,6 +19,6 @@ public class DemographicDTO {
     public String disability;
     public String mobilityHelp;
     public String readingLiteracyHelp;
-    public String Translation_Help;
-    public String Victim_Armed_Conflict;
+    public String translation_Help;
+    public String victim_Armed_Conflict;
 }

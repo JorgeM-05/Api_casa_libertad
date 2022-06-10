@@ -47,6 +47,7 @@ public class DemographicController {
 
     @PostMapping
     public ResponseEntity<DemographicDTO> createNewDataDemo(@RequestBody NewDemographicDTO newDemographic) throws NotFoundException, ConflictException, ParseException {
+        logger.info("POST.....");
         DemographicDTO demographicDTO = demographicService.createDemographicUser(newDemographic);
         return new ResponseEntity<DemographicDTO>(demographicDTO, HttpStatus.CREATED);
     }
